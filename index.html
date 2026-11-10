@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lebari Pado | Product Designer & Product Manager</title>
+  <meta name="description" content="Lebari Pado is a Senior Product Designer and Product Manager in Port Harcourt, now studying Software Engineering at Miva Open University.">
+  <meta name="author" content="Lebari Pado">
+  <meta name="theme-color" content="#0B2A4A">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <!-- One external stylesheet for the whole site -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Lebari Pado, home">
+        <span class="logo-mark">LP</span>
+        <span>Lebari Pado</span>
+      </a>
+      <nav class="top-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="about.html" data-nav="about">About</a></li>
+          <li><a href="projects.html" data-nav="projects">Projects</a></li>
+          <li><a href="planner.html" data-nav="planner">Planner</a></li>
+          <li><a href="contact.html" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-primary btn-small header-cta" href="contact.html">Let's talk</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== HERO: name, photo, welcome, short bio ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+
+        <!-- Photo collage: three fanned photos, like my paper sketch -->
+        <div class="collage reveal">
+          <figure class="photo-left">
+            <img src="assets/images/whiteboard.webp" alt="Lebari at a whiteboard, planning features with his team" width="700" height="452">
+            <figcaption>plan</figcaption>
+          </figure>
+          <figure class="photo-main">
+            <img src="assets/images/portrait-standing.webp" alt="Portrait of Lebari Pado standing in an office in front of a colourful painting" width="675" height="1200">
+            <figcaption>see &mdash; me</figcaption>
+          </figure>
+          <figure class="photo-right">
+            <img src="assets/images/sketching-laptop.webp" alt="Paper wireframe sketches beside a laptop" width="619" height="1100">
+            <figcaption>sketch</figcaption>
+          </figure>
+          <p class="note" aria-hidden="true">that's me &rarr;</p>
+        </div>
+
+        <div class="hero-text reveal">
+          <span class="spec">&mdash; Welcome</span>
+          <p class="hero-welcome">Welcome, I'm glad you stopped by. I'm</p>
+          <h1 id="hero-title">Lebari Pado</h1>
+          <p class="hero-role">Snr Product Designer &amp; Product Manager</p>
+          <p class="hero-bio">
+            For over five years I've designed and managed digital products for African and global teams,
+            from AI hiring tools to e-commerce and learning platforms. Now I'm studying
+            <span class="mark">Software Engineering at Miva</span> so I understand the engineering
+            beneath every product I design.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="projects.html">See my work</a>
+            <a class="btn btn-secondary" href="#story-video">Watch my story</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Quick facts (a description list) -->
+        <dl class="now-strip reveal">
+          <div><dt>Studying</dt><dd>BSc Software Engineering, Miva (100 Level)</dd></div>
+          <div><dt>Working</dt><dd>Product Manager, TechBridge City</dd></div>
+          <div><dt>Based in</dt><dd>Port Harcourt, Nigeria</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===== VIDEO: my story in my own voice ===== -->
+    <section class="section" id="story-video" aria-labelledby="video-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="spec"> &mdash; Multimedia</span>
+          <h2 id="video-title">Hear it from me</h2>
+          <p>A CV tells you what I've done. These four short clips show how I think and work. The first one plays silently. Tap "Sound on" to hear it, or pick another clip.</p>
+        </div>
+
+                <div class="card video-card reveal">
+          <div class="video-meta">
+            <div class="video-head">
+              <h3 id="clip-title">Introduction: who I am</h3>
+              <button type="button" class="btn btn-secondary btn-small" id="sound-btn" aria-pressed="false">Sound on</button>
+            </div>
+            <p id="clip-desc">Loading clip details&hellip;</p>
+            <!-- JavaScript (media.js) builds the clip buttons from an array -->
+            <div class="video-list" id="clip-list" role="group" aria-label="Choose a video clip"></div>
+          </div>
+          <!-- autoplay only works when muted; media.js adds a "Sound on" button -->
+          <video id="story-player" controls autoplay muted loop playsinline preload="metadata" poster="assets/images/poster-intro.webp">
+            Your browser does not support HTML video. You can <a href="assets/media/intro.mp4">download the clip</a> instead.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STORY: this site started on paper ===== -->
+    <section class="section" aria-labelledby="paper-title">
+      <div class="container story-grid">
+        <div class="story-photo reveal">
+          <img src="assets/images/wireframe-paper.webp" alt="Hand-drawn wireframe of this portfolio website for mobile and desktop, with a list of key features" width="619" height="1100" loading="lazy">
+          <p class="note" aria-hidden="true">where it began</p>
+        </div>
+        <div class="reveal"> &mdash; Process</span>
+          <h2 id="paper-title">This website started on paper</h2>
+          <p>
+            Before writing any code, I did what I do for every product: I sketched it. These were the goals I wrote
+            at the top of the page, and the site you're on was built to meet each one.
+          </p>
+          <ul class="story-list">
+            <li>Tell my story as a designer</li>
+            <li>Mobile first and fully responsive</li>
+            <li>Human, and easy for me to explain and defend</li>
+            <li>Semantic HTML, CSS animation and JavaScript</li>
+            <li>Three projects, from Figma designs to live products</li>
+            <li>App-style bottom navigation on phones and tablets</li>
+          </ul>
+          <a class="btn btn-secondary" href="#story-video" data-clip="2" style="margin-top:20px">Watch me explain the wireframe</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== QUICK LINKS to the other pages ===== -->
+    <section class="section" aria-labelledby="explore-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="spec"> &mdash; Explore</span>
+          <h2 id="explore-title">Where to next?</h2>
+        </div>
+        <div class="quick-links">
+          <a class="card quick-link reveal" href="about.html"><span>01 / About</span><h3>My story</h3><p>Education, skills, goals and what I do for fun.</p></a>
+          <a class="card quick-link reveal" href="projects.html"><span>02 / Projects</span><h3>Selected work</h3><p>Three projects and the role I played in each.</p></a>
+          <a class="card quick-link reveal" href="planner.html"><span>03 / Planner</span><h3>Academic planner</h3><p>How I keep track of courses, deadlines and exams.</p></a>
+          <a class="card quick-link reveal" href="contact.html"><span>04 / Contact</span><h3>Say hello</h3><p>Send me a message. I reply within two days.</p></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Lebari Pado &middot; Built with HTML, CSS and JavaScript for COS 106, Miva Open University.</p>
+      <ul class="footer-links">
+        <li><a href="https://www.linkedin.com/in/lebari-pado" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="mailto:l.pado3522@miva.edu.ng">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- App-style bottom navigation for phones and tablets (from my paper wireframe) -->
+  <nav class="tab-bar" aria-label="Main (mobile)">
+    <ul>
+      <li><a href="index.html" data-nav="home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg><span>Home</span></a></li>
+      <li><a href="about.html" data-nav="about"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg><span>About</span></a></li>
+      <li><a href="projects.html" data-nav="projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg><span>Projects</span></a></li>
+      <li><a href="planner.html" data-nav="planner"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 10h18M8 15l2.5 2.5L16 13"/></svg><span>Planner</span></a></li>
+      <li><a href="contact.html" data-nav="contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>Contact</span></a></li>
+    </ul>
+  </nav>
+
+  <script src="js/main.js"></script>
+  <script src="js/media.js"></script>
+</body>
+</html>
