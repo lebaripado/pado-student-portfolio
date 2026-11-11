@@ -73,12 +73,16 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   color: var(--navy);
-  background-color: var(--paper);
-  /* the blueprint grid */
+
+   /* old sheet of paper: warm cream colour + soft darker edges + fine grain */
+  background-color: #fcf8ed;
   background-image:
-    linear-gradient(var(--line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--line) 1px, transparent 1px);
-  background-size: 32px 32px;
+    radial-gradient(ellipse at center, rgba(251, 248, 238, 0.55) 0%, rgba(255, 250, 235, 0) 60%),
+    radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 55%, rgba(120, 85, 40, 0.3) 100%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.45 0 0 0 0 0.32 0 0 0 0 0.15 0 0 0 0.09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 100% 100%, 100% 100%, 220px 220px;
+  background-attachment: fixed, fixed, scroll;
+
   /* room for the mobile tab bar */
   padding-bottom: calc(var(--tabbar-h) + 12px);
 }
@@ -278,8 +282,8 @@ a:hover { color: var(--orange-text); }
   transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 .btn:hover { transform: translateY(-2px); }
-.btn-primary { background: var(--orange); color: var(--navy); }
-.btn-primary:hover { color: var(--navy); box-shadow: 0 8px 20px rgba(242, 107, 29, 0.35); }
+.btn-primary { background: var(--orange); color: var(--white); }
+.btn-primary:hover { color: var(--white); box-shadow: 0 8px 20px rgba(242, 107, 29, 0.35); }
 .btn-secondary { background: transparent; color: var(--navy); border-color: var(--navy); }
 .btn-secondary:hover { background: var(--navy); color: var(--white); }
 .btn-small { min-height: 38px; padding: 6px 14px; font-size: 0.9rem; }
